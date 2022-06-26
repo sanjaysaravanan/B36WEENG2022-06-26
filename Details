@@ -1,0 +1,116 @@
+Recap:
+
+  Overflow --> Whenever the child overflow the parent container by either heigth ( vertically ) or width (horizonatlly)
+
+    this can be handled by overflow prop for parent.
+
+    Overflow:
+
+      visible ( defautl ) ---> overflow and UI will not be nice 
+      hidden ---> Hides the overflow for the user
+      scroll ---> Create a scroll/scroll track irrespective overflow
+      auto ---> Create a scroll-bar only when is there is a overflow
+
+
+  display: ---> flex-box
+    flex
+
+      container controls the alignment of the children
+
+      justisy-content ( start, end, center, space-around, space-between, space-evenly ), align-items (start, end, center)
+
+      flex-direction: row/Column
+        row:
+          justify-content - used to align horizontaly
+          aling-items - used to align vertically
+
+        Column:
+          justify-content - used to align vertically
+          aling-items - used to align horizonatlly
+
+    grid:
+      Make a div to have it children in grid like structure
+        grid-template-columns: auto auto auto auto; creates four columns
+        gap: 16px; row & columns gap
+
+  Position:
+
+    it is used to place any element in the webpage according to the top,left, bottom, right
+
+    static:
+      1. defautl value
+      2. space is occupied in the normal document flow
+      3. not affected by top, left, bottom, right
+
+    relative:
+      1. relativly postion the element according to top,left ... with respective to it immediate parent
+      2. space is occupied in the normal document flow
+      3. affected by top, left, bottom, right
+
+    absolute:
+      1. removed from the normal flow and affected by top, left with respective initial containing Block
+          if no parent is positioned with non static value
+          if a parent is positioned with non static value then the element will placed with resp[ective to that parent
+      2. No space is occupied in the normal document flow
+      3. affected by top, left, bottom, right
+
+    fixed:
+      1. removed from the normal flow and affected by top, left with respective initial containing Block
+      2. No space is occupied in the normal document flow
+      3. affected by top, left, bottom, right
+  
+    sticky:
+      1. goes the normal flow
+      2. No space is occupied in the normal document flow
+      3. affected by top, left, bottom, right when the threshold for postion value reaches
+
+Topics:
+
+  drop-box ---> select tag
+
+  fonts --> Google Fonts ( https://fonts.google.com/ )
+
+  icons --> font awesome ( https://cdnjs.com/libraries/font-awesome )
+
+  mesurements/units:
+
+    different mesurement units ( absolute & relative ) in css
+
+    Absolute units: px - pixel, pt - point, pc - picas,
+    1px = 1/96th of an inch
+
+    1pt = point 1/72th of an inch
+
+    1pc = picas 12 * 1pt or 1/6th of inch
+
+    Relative Units: %, vh, vw, 
+      1% -> 1 percent of the parent
+      vw -> viewport width
+        1vw -> 1 % viewport width
+      vh -> viewport height
+        1vh -> 1 % viewport height
+
+      emphemeral units
+      em, rem ---> root em
+        1rem = fontsize of the root element ( Initial Containing Block )
+        1em = fontsize of the parent element
+
+  RWD ---> Responsive Web Design
+
+    Designing websites all devices ( with different resolutions ) 
+
+    Mobile Fisrt Approach --> keep mobile resolution as a important form-factor while developing site
+
+    Media Queries:
+
+      Style based on the resolution of the screen
+
+    Bootstrap Intro ( https://getbootstrap.com/docs/5.1/getting-started/introduction/ )
+
+
+    Next Session
+      Bootstrap Setup & usage
+
+        RWD in Bootstrap, Grid, Row, Columns
+
+        12 Column System
